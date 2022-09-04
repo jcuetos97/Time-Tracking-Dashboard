@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rubik:wght@300;400;500&family=Titillium+Web:wght@200;300;400&display=swap');
+
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+:root {  
+    /* Primary */
+    --Blue: hsl(246, 80%, 60%);
+    
+    --Lightred-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-selfcare: hsl(43, 84%, 65%);
+
+    /* Neutral */
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    background-color: var(--Very-dark-blue);
+}
+
+.main-container {
+    top: 3rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: xx-large;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: x-large;
+}
+
+.card-user {
+    width: 375px;
+    margin: 15px; 
+    margin-bottom: 45px; 
+    color:white; 
+}
+
+
+
+
+.card-user_infosection {
+    background-color: var(--Desaturated-blue);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+    .card-user_subtext {
+        margin: 0;
+    }
+    .card-user img {
+        width:3.5rem;
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+
+.card-user_timefrecuency {
+    position: relative;
+    top: -15px;
+    height: 65%;
+    z-index: -1;
+    border-radius: 15px;
+    background-color: var(--Dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .card-user_timefrecuency ul {
+       position: relative;
+       top: 7.5px;
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+    }
+    
+    .card-user_timefrecuency ul li {
+        list-style: none;
+        
+    }
+
+
+.card-activity {
+    width: 375px;
+    height: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+    .card-activity_body {
+        background-color: var(--Dark-blue);
+        color: white;
+        border-radius: 15px;
+        padding: 25px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        line-height: 2.5rem;}
+        .card-activity_body-header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .card-activity_body-content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    .card-activity_heading {
+        text-align: right;
+        border-radius: 15px;
+        position: relative;
+        height: 11%;
+        top: 25px;
+        z-index: -1; 
+        overflow: hidden;
+    }
+    .card-activity_heading img {
+        float: inline-end; 
+        margin-right: 12px;
+        position: relative;
+        top: -5px;      
+    }
+    
+    .work {background-color: var(--Lightred-work);}
+    .play {background-color: var(--Soft-blue-play);}
+    .study {background-color: var(--Light-red-study);}
+    .exercise {background-color: var(--Lime-green-exercise);}
+    .social {background-color: var(--Violet-social);}
+    .self-care {background-color: var(--Soft-orange-selfcare);}
+
+    .weekly {
+        display: none;
+    }
+
+    .monthly {
+        display: none;
+    }
+
+
+    @media only screen and (min-width: 840px) {
+        .card-user {
+            height: 545px;
+        }
+        .card-user_infosection {
+            height: 345px;
+        }
+    
+        .card-user_timefrecuency ul li {
+            display: flex; 
+        }
+    
+        .card-user_timefrecuency {
+           height: 45%;
+        }
+
+
+        .card-user img {
+            width:6.5rem;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        .card-user_infosection {
+            display: block;
+        }
+    }
+    
