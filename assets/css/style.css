@@ -36,15 +36,17 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 200;
     background-color: var(--Very-dark-blue);
+    color:white; 
 }
 
 .main-container {
-    top: 3rem;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
 h1 {
@@ -58,12 +60,21 @@ h2 {
 }
 
 .card-user {
-    width: 375px;
-    margin: 15px; 
-    margin-bottom: 45px; 
-    color:white; 
+    position: relative;
+    width: 375px;    
 }
 
+.container-space-around {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.container-space-between {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
 
 
 
@@ -71,9 +82,6 @@ h2 {
     background-color: var(--Desaturated-blue);
     border-radius: 15px;
     padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
 }
     .card-user_subtext {
         margin: 0;
@@ -85,27 +93,21 @@ h2 {
     }
 
 .card-user_timefrecuency {
-    position: relative;
-    top: -15px;
-    height: 65%;
+    position: absolute;
+    bottom: -45px;
+    width: 100%;
     z-index: -1;
     border-radius: 15px;
     background-color: var(--Dark-blue);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     }
     .card-user_timefrecuency ul {
        position: relative;
        top: 7.5px;
        width: 100%;
-       display: flex;
-       justify-content: space-around;
     }
-    
     .card-user_timefrecuency ul li {
         list-style: none;
-        
+        padding: 25px;
     }
 
 
@@ -127,16 +129,9 @@ h2 {
         line-height: 2.5rem;}
         .card-activity_body-header {
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
         }
         .card-activity_body-content {
             width: 100%;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: space-between;
         }
     .card-activity_heading {
         text-align: right;
@@ -171,13 +166,18 @@ h2 {
 
 
     @media only screen and (min-width: 840px) {
-        .card-user {
-            height: 545px;
+        
+        .container-cards-activities {
+            max-height: 475px;
+            width: 65%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        .card-user_infosection {
-            height: 345px;
+        
+        .card-activity {
+            width: 275px;
         }
-    
         .card-user_timefrecuency ul li {
             display: flex; 
         }
