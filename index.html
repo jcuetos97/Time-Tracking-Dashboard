@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Time tracking dashboard</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  
 </head>
 <body>
 
@@ -21,16 +23,21 @@
         </div> 
         <div class="card-user_timefrecuency container-space-around">
           <ul class="container-space-around">
-            <li>Daily</li>
-            <li>Weekly</li>
-            <li id="button">Monthly</li>     
+            <li class="button-time">
+             <p>Daily</p> 
+            </li>
+            <li class="button-time">
+             <p>Weekly</p> 
+            </li>
+            <li class="button-time">
+             <p>Monthly</p> 
+            </li>     
           </ul>
         </div>     
       </div> 
     </div>
     
     <div class="container-cards-activities">
-
       <div class="card-activity">
         <div class="card-activity_heading work">
           <img src="./assets/images/icon-work.svg" alt="icon-work">
@@ -41,16 +48,8 @@
             <img src="./assets/images/icon-ellipsis.svg" alt="ellipsis">
           </div>
           <div class="daily card-activity_body-content container-space-between">
-              <h1>5hrs</h1>
-              <p>Previous - 7hrs</p>
-          </div>
-          <div class="weekly card-activity_body-content ">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
-          </div>
-          <div class="monthly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
+              <h1 class="hour">5hrs</h1>
+              <p class="previous">Previous - 7hrs</p>
           </div>
         </div>
       </div> 
@@ -65,16 +64,8 @@
             <img src="./assets/images/icon-ellipsis.svg" alt="ellipsis">
           </div>
           <div class="daily card-activity_body-content container-space-between">
-              <h1>5hrs</h1>
-              <p>Previous - 7hrs</p>
-          </div>
-          <div class="weekly card-activity_body-content ">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
-          </div>
-          <div class="monthly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
+              <h1 class="hour">5hrs</h1>
+              <p class="previous">Previous - 7hrs</p>
           </div>
         </div>
       </div>
@@ -89,16 +80,8 @@
             <img src="./assets/images/icon-ellipsis.svg" alt="ellipsis">
           </div>
           <div class="daily card-activity_body-content container-space-between">
-              <h1>5hrs</h1>
-              <p>Previous - 7hrs</p>
-          </div>
-          <div class="weekly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
-          </div>
-          <div class="monthly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
+              <h1 class="hour">5hrs</h1>
+              <p class="previous">Previous - 7hrs</p>
           </div>
         </div>
       </div>
@@ -113,16 +96,8 @@
             <img src="./assets/images/icon-ellipsis.svg" alt="ellipsis">
           </div>
           <div class="daily card-activity_body-content container-space-between">
-              <h1>5hrs</h1>
-              <p>Previous - 7hrs</p>
-          </div>
-          <div class="weekly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
-          </div>
-          <div class="monthly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
+              <h1 class="hour">5hrs</h1>
+              <p class="previous">Previous - 7hrs</p>
           </div>
         </div>
       </div>
@@ -137,16 +112,8 @@
             <img src="./assets/images/icon-ellipsis.svg" alt="ellipsis">
           </div>
           <div class="daily card-activity_body-content container-space-between">
-              <h1>5hrs</h1>
-              <p>Previous - 7hrs</p>
-          </div>
-          <div class="weekly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
-          </div>
-          <div class="monthly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
+              <h1 class="hour">5hrs</h1>
+              <p class="previous">Previous - 7hrs</p>
           </div>
         </div>
       </div>
@@ -161,26 +128,21 @@
             <img src="./assets/images/icon-ellipsis.svg" alt="ellipsis">
           </div>
           <div class="daily card-activity_body-content container-space-between">
-              <h1>5hrs</h1>
-              <p>Previous - 7hrs</p>
-          </div>
-          <div class="weekly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
-          </div>
-          <div class="monthly card-activity_body-content">
-            <h1>5hrs</h1>
-            <p>Previous - 7hrs</p>
+              <h1 class="hour">5hrs</h1>
+              <p class="previous">Previous - 7hrs</p>
           </div>
         </div>
     </div>
+  
   </section>
 
-  <!-- <footer>
-    <div class="attribution">
+  <footer>
+    <div>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Juan José Espinosa</a>.
+      Coded by <a href="https://jcuetos97.github.io/Web-Developer-Portfolio/" target="_blank">Juan José Espinosa</a>.
     </div>
-  </footer> -->
+  </footer> 
+  
+
 </body>
 </html>

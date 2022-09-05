@@ -25,12 +25,6 @@
     --Pale-Blue: hsl(236, 100%, 87%);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 200;
@@ -72,6 +66,11 @@ h2 {
     font-size: x-large;
 }
 
+.previous {
+    color: var(--Pale-Blue);
+    font-size: .95rem;
+}
+
 .container-card-user {
     width: 100%;
     max-width: 375px;
@@ -93,6 +92,7 @@ h2 {
     top: 0;
     width: 100%;
     height: 65%;
+    z-index: 2;
     background-color: var(--Desaturated-blue);
     border-radius: 15px;
     padding: 25px; }
@@ -106,22 +106,23 @@ h2 {
     position: absolute;
     bottom: 0;
     width: 100%;
+    z-index: 1;
     height: 45%;
-    z-index: -1;
     border-radius: 15px;
     background-color: var(--Dark-blue);
     }
-    .card-user_timefrecuency button {
-        text-decoration: none;
-        background-color: none;
-     }
     .card-user_timefrecuency ul {
        position: relative;
        top: 7.5px;
        width: 100%;
     }
     .card-user_timefrecuency ul li {
+        color: var(--Pale-Blue);
         list-style: none;
+    }
+    .card-user_timefrecuency ul li:hover, .card-user_timefrecuency ul li:active {
+        color: #fff;
+        cursor: pointer;
     }
 
 .container-cards-activities {
@@ -146,6 +147,11 @@ h2 {
         border-radius: 15px;
         z-index: -1; 
         overflow: hidden; }
+        .card-activity_heading img {
+            margin-right: 12px;
+            position: relative;
+            top: -5px;      
+        }
     .card-activity_body {
         position: absolute;
         width: 100%;
@@ -156,19 +162,12 @@ h2 {
         padding: 25px; 
         display: flex;
         flex-direction: column;
-        line-height: 2.5rem; }
-    .card-activity_heading img {
-        margin-right: 12px;
-        position: relative;
-        top: -5px;      
-    }
+        line-height: 2.5rem; }   
+        .card-activity_body:hover {
+            cursor: pointer;
+            background-color: var(--Desaturated-blue);
+        }
 
-
-    .card-activity_body:hover {
-        cursor: pointer;
-        background-color: var(--Desaturated-blue);
-    }
-    
     .work {background-color: var(--Lightred-work);}
     .play {background-color: var(--Soft-blue-play);}
     .study {background-color: var(--Light-red-study);}
@@ -179,6 +178,26 @@ h2 {
     .weekly {display: none;}
     .monthly {display: none;}
 
+    footer {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 25px;
+        background-color: var(--Soft-blue-play);
+        bottom: 0;
+    }
+
+    footer div a {
+        text-decoration: none;
+        color: var(--Dark-blue);
+    }
+
+    footer div a:hover {
+        color: var(--Desaturated-blue);
+    }
 
     @media only screen and (min-width:1440px) {
         
@@ -207,6 +226,7 @@ h2 {
                 flex-direction: column;
                 justify-content: space-evenly; }
                 .card-user_timefrecuency ul {
+                    z-index: 3;
                     padding: 25px;
                     padding-top: 45px; }
                 .card-user_timefrecuency ul li {
@@ -219,9 +239,22 @@ h2 {
             height: 255px;
         }
        
-       
         h1 {font-size: 55px;}
         h2 {font-size: 45px;}
 
+        .previous {
+            position: absolute;
+            bottom: 25px 
+        }
+        .hour {
+            position: absolute;
+            bottom: 75px;
+        }
+
     }
+    
+
+    
+ 
+
     
