@@ -25,7 +25,6 @@
     --Pale-Blue: hsl(236, 100%, 87%);
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +36,9 @@ body {
     font-weight: 200;
     background-color: var(--Very-dark-blue);
     color:white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container {
@@ -45,23 +47,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-h1 {
-    font-weight: 200;
-    font-size: xx-large;
-}
-
-h2 {
-    font-weight: 200;
-    font-size: x-large;
-}
-
-.card-user {
-    position: relative;
-    width: 375px;    
+    max-width: 475px;
 }
 
 .container-space-around {
@@ -76,16 +62,40 @@ h2 {
     justify-content:space-between;
 }
 
+h1 {
+    font-weight: 200;
+    font-size: xx-large;
+}
 
+h2 {
+    font-weight: 200;
+    font-size: x-large;
+}
+
+.container-card-user {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.card-user {
+    position: relative;
+    width: 325px;
+    height: 195px;
+    margin: 25px;
+}
 
 .card-user_infosection {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 65%;
     background-color: var(--Desaturated-blue);
     border-radius: 15px;
-    padding: 25px;
-}
-    .card-user_subtext {
-        margin: 0;
-    }
+    padding: 25px; }
     .card-user img {
         width:3.5rem;
         border: 3px solid white;
@@ -94,12 +104,17 @@ h2 {
 
 .card-user_timefrecuency {
     position: absolute;
-    bottom: -45px;
+    bottom: 0;
     width: 100%;
+    height: 45%;
     z-index: -1;
     border-radius: 15px;
     background-color: var(--Dark-blue);
     }
+    .card-user_timefrecuency button {
+        text-decoration: none;
+        background-color: none;
+     }
     .card-user_timefrecuency ul {
        position: relative;
        top: 7.5px;
@@ -107,46 +122,51 @@ h2 {
     }
     .card-user_timefrecuency ul li {
         list-style: none;
-        padding: 25px;
     }
 
+.container-cards-activities {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .card-activity {
-    width: 375px;
-    height: 100%;
-    margin-right: 15px;
-    margin-left: 15px;
-}
+    position: relative;
+    width: 325px;
+    height: 175px;
+    margin: 25px; }
+    .card-activity_heading {
+        position: absolute;
+        width: 100%;
+        height: 35%;
+        top:0;
+        text-align: right;
+        border-radius: 15px;
+        z-index: -1; 
+        overflow: hidden; }
     .card-activity_body {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        bottom: 0;
         background-color: var(--Dark-blue);
-        color: white;
         border-radius: 15px;
         padding: 25px; 
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content:space-around;
-        line-height: 2.5rem;}
-        .card-activity_body-header {
-            width: 100%;
-        }
-        .card-activity_body-content {
-            width: 100%;
-        }
-    .card-activity_heading {
-        text-align: right;
-        border-radius: 15px;
-        position: relative;
-        height: 11%;
-        top: 25px;
-        z-index: -1; 
-        overflow: hidden;
-    }
+        line-height: 2.5rem; }
     .card-activity_heading img {
-        float: inline-end; 
         margin-right: 12px;
         position: relative;
         top: -5px;      
+    }
+
+
+    .card-activity_body:hover {
+        cursor: pointer;
+        background-color: var(--Desaturated-blue);
     }
     
     .work {background-color: var(--Lightred-work);}
@@ -156,47 +176,52 @@ h2 {
     .social {background-color: var(--Violet-social);}
     .self-care {background-color: var(--Soft-orange-selfcare);}
 
-    .weekly {
-        display: none;
-    }
-
-    .monthly {
-        display: none;
-    }
+    .weekly {display: none;}
+    .monthly {display: none;}
 
 
-    @media only screen and (min-width: 840px) {
+    @media only screen and (min-width:1440px) {
         
-        .container-cards-activities {
-            max-height: 475px;
-            width: 65%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .main-container {
+            max-width: 100%;
+            height: 100vh;
         }
-        
+        .container-cards-activities {
+            max-width: 1040px;
+            flex-wrap: wrap;
+        }
+        .container-card-user {
+            width: 40%;
+            margin: 0;
+        }
+        .container-space-around {
+            flex-direction: column;
+            align-items: self-start;
+        }
+       
+        .card-user {
+            width: 375px;
+            height: 560px; }
+            .card-user_timefrecuency {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly; }
+                .card-user_timefrecuency ul {
+                    padding: 25px;
+                    padding-top: 45px; }
+                .card-user_timefrecuency ul li {
+                    padding: 15px;
+                }
+                .card-user img {width: 6.5rem;}
+
         .card-activity {
             width: 275px;
+            height: 255px;
         }
-        .card-user_timefrecuency ul li {
-            display: flex; 
-        }
-    
-        .card-user_timefrecuency {
-           height: 45%;
-        }
+       
+       
+        h1 {font-size: 55px;}
+        h2 {font-size: 45px;}
 
-
-        .card-user img {
-            width:6.5rem;
-        }
-
-        h2 {
-            font-size: 3.5rem;
-        }
-
-        .card-user_infosection {
-            display: block;
-        }
     }
     
