@@ -1,0 +1,21 @@
+{
+  "name": "time-tracking-dashboard",
+  "version": "1.0.0",
+  "description": "![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcuetos97/Time-Tracking-Dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcuetos97/Time-Tracking-Dashboard/issues"
+  },
+  "homepage": "https://github.com/jcuetos97/Time-Tracking-Dashboard#readme"
+}
