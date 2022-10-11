@@ -1,7 +1,3 @@
-import data from '../../data.json' assert { type: 'json' };
-
-console.log(JSON.stringify(data));
-
 // Buttons
 const dailybttn = document.getElementById('daily');
 const weeklybttn = document.getElementById('weekly');
