@@ -2,6 +2,8 @@
 
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). 
 
+[Link](https://jcuetos97.github.io/Time-Tracking-Dashboard/) to app. 
+
 ## Table of contents
 
 - [Overview](#overview)
