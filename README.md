@@ -1,7 +1,10 @@
-# Frontend Mentor - Time tracking dashboard solution
+# Time tracking dashboard
 
+## Description
+This app is a time tracking dashboard made with responsive design. Built with HTML-CSS-Javascript, this layout allows users to access daily, weekly and monthly stats on time spent regarding six different categories: work, exercise, play, study, social and self-care.
+
+## Link
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). 
-
 [Link](https://jcuetos97.github.io/Time-Tracking-Dashboard/) to app. 
 
 ## Table of contents
